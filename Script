@@ -39,6 +39,15 @@
         end
         })
 
+        MainSection:AddToggle({
+            Name = "Auto Rebirth",
+            Flag = "AutoRebirthTrue",
+            Keybind = 1,
+            Callback = function(state)
+                getgenv().autoRebirth = state
+                autoRebirth()
+            end
+            })
 
 
 
@@ -60,5 +69,9 @@ function autoChina()
 
 
 
-
+function autoRebirth()
+    while getgenv().autoRebirth == true do wait()
+        game:GetService("ReplicatedStorage").Rebirth:FireServer()
+    end
+end
 
