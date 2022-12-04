@@ -6,7 +6,7 @@
  local PepsisWorld = library:CreateWindow({
  Name = "Dig to China Script | By VIPER",
  Themeable = {
- Info = "Discord: https://discord.gg/ZjnMetfUDN"
+ Info = "https://discord.gg/ZjnMetfUDN"
  }
  })
  
